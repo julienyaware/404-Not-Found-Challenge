@@ -4,7 +4,6 @@ html{
     background-color: lightsteelblue;
 
 }
-
 .wrapper {
     display: grid;
     grid-gap: 20px;
@@ -65,11 +64,11 @@ html{
 display: flex;
 flex-direction: column;
 align-items: start;
-    justify-content: center;
+justify-content: center;
 }
 
 .side-box > h1{
-    font-family: Space Mono;
+font-family: Space Mono;
 font-style: normal;
 font-weight: bold;
 font-size: 64px;
@@ -125,8 +124,8 @@ footer{
     
 }
 
-@media(max-width: 700px) {
-    /* .container{
+@media(max-width: 692px) {
+    .container{
         margin-top: 1.5rem;
         display: grid;
         grid-gap: 20px;
@@ -135,7 +134,7 @@ footer{
 
     .scareCrowImage > img {
         height: 362px;
-    } */
+    }
 }
 
 @media(max-width: 500px) {
