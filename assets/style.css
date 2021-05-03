@@ -1,34 +1,99 @@
-.headingText{
-position: absolute;
-width: 586px;
-height: 190px;
-left: 735px;
-top: 265px;
+html{
+    box-sizing: border-box;
+    margin: 20px;
+    background-color: lightsteelblue;
 
-font-family: Space Mono;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.title-header{
+    height: 25px;
+    left: 77px;
+    top: 40px;
+    margin-bottom: 20px;
+    
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    
+    color: #333333;
+ }
+
+.scareCrowImage > img {
+ height: 500px;
+ transform: rotate(20deg);
+ animation-name: slide;
+ animation-iteration-count: infinite;
+ animation-duration: 4s;
+}
+
+@keyframes slide{
+    0% {
+        transform: rotate(20deg);
+      }
+    
+     25% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(-20deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+   
+}
+
+.container{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.side-box{
+display: flex;
+flex-direction: column;
+align-items: start;
+    justify-content: center;
+}
+
+.side-box > h1{
+    font-family: Space Mono;
 font-style: normal;
 font-weight: bold;
 font-size: 64px;
 line-height: 95px;
 letter-spacing: -0.035em;
-
-/* Gray 1 */
-
-color: #333333;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.side-box > a {
+font-family: Space Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 70px;
+/* identical to box height */
+
+letter-spacing: -0.035em;
+text-transform: uppercase;
+text-align: center;
+padding: 0.5rem 0.6rem;
 }
-.detailedExplanationText {
-    position: absolute;
+
+.detailedExplanationText{
     width: 381px;
     height: 108px;
-    left: 736px;
-    top: 491px;
-    
     font-family: Space Mono;
     font-style: normal;
     font-weight: normal;
@@ -41,51 +106,48 @@ color: #333333;
     color: #4F4F4F;
 }
 
-.homePageButton{
-    position: absolute;
+.btn{
+    text-decoration: none;
+    border: 1px solid;
+    padding: 0.5rem 0.6rem;
     width: 216px;
     height: 68px;
-    left: 740px;
-    top: 663px;
-    
-    /* Gray 1 */
-    
     background: #333333;
-}
-.backToHomePageText{
-position: absolute;
-width: 130px;
-height: 21px;
-left: 783px;
-top: 687px;
+    color: #fff;
 
-font-family: Space Mono;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 21px;
-/* identical to box height */
 
-letter-spacing: -0.035em;
-text-transform: uppercase;
-
-color: #FFFFFF;
 }
 
-.heading404{
-position: absolute;
-width: 133px;
-height: 25px;
-left: 77px;
-top: 40px;
+footer{
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    
+}
 
-font-family: Inconsolata;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 25px;
-letter-spacing: -0.08em;
-text-transform: uppercase;
+@media(max-width: 700px) {
+    /* .container{
+        margin-top: 1.5rem;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+    }
 
-color: #333333;
+    .scareCrowImage > img {
+        height: 362px;
+    } */
+}
+
+@media(max-width: 500px) {
+    .container{
+        margin-top: 1.5rem;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .scareCrowImage > img {
+        height: 300px;
+    }
+
 }
